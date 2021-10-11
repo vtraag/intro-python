@@ -6,7 +6,7 @@ This README.md will contains the instructions for how to setup your system. This
 
 1) installing Anaconda Python locally;
 2) installing git and fork & clone this repository;
-3) launching jupyter notebook;
+3) run python.
 
 # Install Anaconda Python
 
@@ -77,25 +77,33 @@ Alternatively, you can create a new branch in your favorite GUI, for example thr
 
 You are now all setup and good to go! Good luck with the introduction to Python.
 
-# Launch Jupyter notebook
+# Run Python
 
-The Jupter notebook itself is located in the subdirectory `src/`.
+There are essentially two ways of running Python. You can simply run an existing Python script. We will not talk much about this way of using Python. The second way of running Python is interactively. You can interactively run Python in several different ways. We will explore two relatively common possibilities: an interactive editor ([Spyder](https://www.spyder-ide.org/)) and a so-called notebook ([Jupyter notebook](https://jupyter.org/)).
 
-If you are on Windows, please open the Anaconda Prompt. If you are on other platforms, simply open the terminal and initialise the `conda` environment by typing in `conda activate`. If this does not work for you, please see installation instructions for your platform.
+## Run Spyder
 
-Please go to the directory in you have cloned this repository locally. You can do that using
+There are a few ways in which you can launch Spyder:
 
-```bash
-cd [directory]
-```
+1. You can launch Spyder from the Start Menu, but this only works on Windows.
+1. You can launch Spyder from the Anaconda Navigator: see [here](https://docs.anaconda.com/anaconda/user-guide/getting-started/) for instructions.
+2. You can launch Spyder from the terminal / Anaconda prompt. If you are on Windows, please open the Anaconda prompt from the Start Menu. If you are on macOS or linux, please open a terminal and activate conda by `conda activate`. For all three platforms you can then run Spyder by `spyder`.
 
-where you should replace `[directory]` with the actual directory where you have cloned this repository.
+We will briefly experiment with Spyder to demonstrate it, but most of the exercise will be done in a Jupyter notebook.
 
-You can then start the Jupyter notebook using
+One advantage of Spyder is that you can simply work with Python source files (`.py`). In particular, it makes it easier to transition from experimenting to more serious development. However, Jupter notebook offer the possibility to nicely mix text, code and output, which is not possibly in simple Python files.
 
-```
-jupyter notebook
-```
+## Jupyter notebook
 
-This will launch a new web browser, and you will see the various directories and files that are available in this repository. Please navigate to the `src` directory and click the `01-basics.ipynb` notebook.
+The Jupter notebook `01_basics.ipynb` used for this introduction is located in the subdirectory `src/`.
 
+There are a few ways in which you can launch a Jupyter notebook:
+
+1. You can launch Jupyter notebook from the terminal / Anaconda prompt. If you are on Windows, please open the Anaconda prompt from the Start Menu. If you are on macOS or linux, please open a terminal and activate conda by `conda activate`. Before launching Jupyter notebook, you should first navigate to the correct directory. In this case, you need to navigate to the directory in which you have cloned this repository. You can do so by using `cd [directory]` where you should replace `[directory]` with the actual directory. You can then run Jupyter notebook by `jupyter notebook`.
+
+There are two others ways in which you can launch Jupyter notebook. However, unfortunately they will always start in a default directory (often your home directory), which you cannot change (easily). If you happened to have cloned this repository as a subdirectory of that default directory, these options could work for you, but if this is not the case, you need to use option (1).
+
+2. You can launch Jupyter notebook from the Start Menu, but this only works on Windows.
+3. You can launch Jupyter notebook from the Anaconda Navigator: see [here](https://docs.anaconda.com/anaconda/user-guide/getting-started/) for instructions.
+
+Once you have launched Jupyter notebook, you should see a new browser window. It should list the various directories and files that are available in this repository, or your home directory if you launched via option (2) or (3). Please navigate to the `src` directory of this repository and click the `01-basics.ipynb` notebook.
