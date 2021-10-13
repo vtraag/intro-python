@@ -1,20 +1,20 @@
 # Introduction
 
-This git repository will host an introduction to Python. In addition, the goal is to use `git` to keep track of your changes. It will explain the basics of how to work with Python and how to start using it.
+This `git` repository will host an introduction to Python for the QSS research group of CWTS. In addition, the goal is to use `git` to keep track of your changes. It will explain the basics of how to work with Python and how to start using it.
 
-This README.md will contains the instructions for how to setup your system. This includes essentially three steps:
+This `README.md` will contains the instructions for how to setup your system. This includes three steps:
 
 1) installing Anaconda Python locally;
-2) installing git and fork & clone this repository;
+2) installing git, fork & clone this repository;
 3) run python.
 
 # Install Anaconda Python
 
-For this introduction we will be using Anaconda Python. This is because it is far easier to install many python packages in Anaconda than in regular Python, especially for Windows. Please go to https://www.anaconda.com/products and download Anaconda and follow the installation instructions.
+For this introduction we will be using Anaconda Python. This is because it is easier to install many python packages in Anaconda than in regular Python, especially for Windows. Please go to https://www.anaconda.com/products and download Anaconda and follow the installation instructions.
 
 # Use this repository with `git`.
 
-Below there are some more detailed instructions for how to setup `git`. If you are already familiar with `git`, you can just do:
+Below there are some more detailed instructions for how to setup `git`. If you are already familiar with `git`, you can just:
 
 1. Fork this repository
 2. Clone your own fork locally
@@ -23,7 +23,7 @@ Below there are some more detailed instructions for how to setup `git`. If you a
 ## Install and configure `git`
 You can download and install `git` from https://git-scm.com/download. Please follow the installation instructions provided there.
 
-In order to get started with `git` please make sure that you have configured `git` correctly. You can open the terminal (the "Bash terminal" on Windows) to use and configure `git`.
+In order to get started with `git` please make sure that you have configured `git` correctly. You can open the terminal (the "git Bash terminal" on Windows) to use and configure `git`.
 
 ```bash
 git configure --global user.name "User Name"
@@ -42,11 +42,11 @@ For other systems, there are a number of popular text editors and their configur
 
 ## Forking this repository
 
-Please make your own copy of this repository by "forking" it. You can make changes to everything in your own repository, and that push those changes to GitHub. That way, you can easily keep track of your own work.
+Please make your own copy of this repository by "forking" it. You can make changes to everything in your own repository, and then push those changes to GitHub. That way, you can easily keep track of your own work.
 
 You can fork this repository by clicking the "Fork" button at the top-right of the [landing page of this repository in GitHub](https://github.com/vtraag/intro-python). After you clicked on "Fork", GitHub will create a new repository for you under your own account.
 
-If you have forked this repository now, you should see at the top of this page that it says `<acccount>/intro-python` and below it will say `forked from vtraag/intro-python`. If you see this, you have successfully forked the original repository.
+If you have forked this repository now, you should see at the top of this page that it says `<acccount>/intro-python` (where `<account>` is your own GitHub account) and below it will say "forked from `vtraag/intro-python`". If you see this, you have successfully forked the original repository.
 
 ## Clone your own fork locally
 
@@ -60,17 +60,17 @@ git clone https://github.com/<account>/intro-python
 
 where you should replace `<account>` by your own account. You can also press the green "Code" buttton to get the correct URL. Make sure that you clone your own fork, and not the original repository, because you will not be able to push changes to the original repository.
 
-Alternatively, you can clone the repository using a GUI, for example through [GitHub desktop](https://desktop.github.com/). If you prefer this route, you can simply click on the gren "Code" button, then click "Open with GitHub Desktop" and follow the instructions. For more details, please see [these instructions](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop).
+Alternatively, you can clone the repository using a GUI, for example through [GitHub desktop](https://desktop.github.com/). If you prefer this route, you can simply click on the green "Code" button, then click "Open with GitHub Desktop" and follow the instructions. For more details, please see [these instructions](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop).
 
 ## Create your own branch
 
-Instead of working directly in the `main` branch, you should work in your own branch. You can call that branch whatever you like, perhaps `work` would be a suitable name.
+Instead of working directly in the `main` branch, you should work in your own branch. You can call that branch whatever you like, perhaps `session-basics` would be a suitable name.
 
 You can easily create a new branch in the `git` terminal and switch to that branch:
 
 ```bash
-git branch work
-git switch work
+git branch session-basics
+git switch session-basics
 ```
 
 Alternatively, you can create a new branch in your favorite GUI, for example through GitHub desktop. Please follow the instructions provided [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches) for more details.
@@ -91,11 +91,11 @@ There are a few ways in which you can launch Spyder:
 
 We will briefly experiment with Spyder to demonstrate it, but most of the exercise will be done in a Jupyter notebook.
 
-One advantage of Spyder is that you can simply work with Python source files (`.py`). In particular, it makes it easier to transition from experimenting to more serious development. However, Jupter notebook offer the possibility to nicely mix text, code and output, which is not possibly in simple Python files.
+One advantage of Spyder is that you can simply work with Python source files (`.py`). In particular, it makes it easier to transition from experimenting to more serious development. However, Jupyter notebook offer the possibility to nicely mix text, code and output, which is not possibly in simple Python files.
 
 ## Jupyter notebook
 
-The Jupter notebook `01_basics.ipynb` used for this introduction is located in the subdirectory `src/`.
+The Jupyter notebook `01-basics.ipynb` used for this introduction is located in the subdirectory `src/`. We might add more notebooks to this repository as we go along.
 
 There are a few ways in which you can launch a Jupyter notebook:
 
@@ -106,4 +106,4 @@ There are two others ways in which you can launch Jupyter notebook. However, unf
 2. You can launch Jupyter notebook from the Start Menu, but this only works on Windows.
 3. You can launch Jupyter notebook from the Anaconda Navigator: see [here](https://docs.anaconda.com/anaconda/user-guide/getting-started/) for instructions.
 
-Once you have launched Jupyter notebook, you should see a new browser window. It should list the various directories and files that are available in this repository, or your home directory if you launched via option (2) or (3). Please navigate to the `src` directory of this repository and click the `01-basics.ipynb` notebook.
+Once you have launched Jupyter notebook, you should see a new browser window. It should list the various directories and files that are available in this repository, or your home directory if you launched via option (2) or (3). Please navigate to the `src` directory of this repository and click the `01-basics.ipynb` notebook to get started.
