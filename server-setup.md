@@ -16,5 +16,5 @@ Creating a conda environment to isolate the packages installed for this project.
 Next time, you can simply run `conda activate develop` to activate the environment.
 
 # Install necessary packages
-* Install main conda packages: `conda install jupyterlab pandas sqlalchemy pyodbc xgboost`
+* Install main conda packages: `conda install jupyterlab pandas sqlalchemy pyodbc xgboost seaborn`
 * Install conda-forge packages: `conda install -c conda-forge ipython-sql`
