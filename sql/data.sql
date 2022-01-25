@@ -24,10 +24,8 @@ ORDER BY pub_year, journal_title, paper_title, authors
 DROP TABLE IF EXISTS #citations
 SELECT 
     pub_citing.paper_id AS citing_paper_id,
-    pub_cited.paper_id AS cited_paper_id
+    paper_reference.paper_reference_id AS cited_paper_id
   INTO #citations
   FROM mag_2019dec..paper_reference
   INNER JOIN #pubs AS pub_citing
     ON pub_citing.paper_id = paper_reference.paper_id
-  INNER JOIN #pubs AS pub_cited
-    ON pub_cited.paper_id = paper_reference.paper_reference_id
